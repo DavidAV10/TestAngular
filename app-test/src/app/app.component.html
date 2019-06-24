@@ -1,0 +1,80 @@
+<!-- <ul>
+  <li>{{users[0]}}</li>
+  <li>{{users[1]}}</li>
+  <li>{{users[2]}}</li>
+</ul>
+
+<ul>
+  <li *ngFor="let user of users"> -->
+<!-- {{user}} -->
+<!-- <app-usuario *ngFor="let user of users" [nombreUsuario]="user"></app-usuario>
+  </li> -->
+<!-- </ul>
+<ul>
+  <li *ngIf="activo">
+    Activo
+  </li>
+</ul> -->
+
+<!-- TypeScrypt -->
+<!-- <div>
+  <p>nombre:{{nombre}}</p>
+  <p>Direccion: {{direccion.calle}}</p>
+  <p>Ciudad: {{direccion.ciudad}}</p>
+  <select>
+    <option *ngFor="let hobby of hobbies">
+      {{hobby}}
+    </option>
+  </select>
+</div> -->
+
+<!-- Metodos -->
+<!-- <ul>
+  <li *ngFor="let user of users">
+    {{user}} - <button (click)="sayHello()">Saludar</button>
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{user}} - <button (click)="eliminarUsuario(user)">Eliminar</button>
+  </li>
+</ul> -->
+
+
+<!-- Formularios -->
+<!--
+<form (submit)="agregarUsuario(newUsuario)">
+  <input type="text" #newUsuario>
+  <button>
+    Enviar usuario
+  </button>
+</form>
+
+<div>
+  <form>
+    <input type="text" name="nombre" [(ngModel)]="nombre">
+    <input type="text" name="edad" [(ngModel)]="edad">
+  </form>
+  nombre: {{nombre}} <br>
+  edad: {{edad}}
+</div>
+<hr>
+<div *ngFor="let publicacion of publicaciones">
+  <h3>{{publicacion.title}}</h3>
+  <p>{{publicacion.body}}</p>
+</div> -->
+
+<!-- Componente -->
+<!-- <app-hola-mundo></app-hola-mundo> -->
+
+<ul>
+  <li>
+    <a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a>
+  </li>
+  <li>
+    <a [routerLink]="['/about']" routerLinkActive="router-link-active">Sobre nosotros</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
